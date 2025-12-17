@@ -220,3 +220,20 @@ Se refiere a los detalles de implementación de la ISA. Es decir:
 + Cada parte: **stage**
 
 ![[PipelineTheoricModel.png]]
+#### Obstáculos **pipeline stall**
+
++ Estructurales
+	+ Una etapa no está suficientemente atomizada
+	+ Conflicto por uso de recursos
+	+ Solución agregar hardware
++ Datos: 
+	+ efecto del pipeline, una instrucción requiere de un dato antes de que este esté disponible por efecto de la secuencia lógica prevista en el programa.
+	+ Una solución: forwarding
++ Control
+	+ Un branch es la peor situaci ´on en p ´erdida de performance del Pipeline. 
+	+ todo lo que estaba pre procesado deba descartarse, ya que son las instrucciones sucesoras secuenciales al branch en el programa.
+	+ **Branch penalty**
+
+
+
+> La memoria creció mucho más lento que la CPU
